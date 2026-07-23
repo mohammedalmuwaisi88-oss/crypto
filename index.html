@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crypto Trading Intelligence</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <h1>Crypto Trading Intelligence</h1>
+        <p>Top 20 movers · multi-strategy scoring engine · live CoinGecko data</p>
+      </div>
+      <div class="strategy-switch" id="strategySwitch"></div>
+    </header>
+ 
+    <div class="market-strip" id="marketStrip"></div>
+    <div id="errorBox"></div>
+ 
+    <section class="block" id="topPicksSection" style="display:none;">
+      <h2 id="topPicksTitle">Smart pick · top 5</h2>
+      <div class="grid five" id="topPicksGrid"></div>
+    </section>
+ 
+    <section class="block" id="top20Section" style="display:none;">
+      <h2>Top 20 by 24h performance</h2>
+      <div class="grid" id="top20Grid"></div>
+    </section>
+ 
+    <section class="block" id="skeletonSection">
+      <div class="grid">
+        <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+      </div>
+    </section>
+ 
+    <section class="detail-grid" id="detailSection" style="display:none;">
+      <div id="detailPanel"></div>
+      <div class="panel risk-panel" id="riskPanel"></div>
+    </section>
+ 
+    <footer class="site">
+      Prices, volumes, market caps and 7-day series are live from CoinGecko. Trend/SMC/breakout/DCA scores are
+      computed in-browser from that data; the on-chain factor is a disclosed estimate pending a paid data
+      provider. This is a research/educational tool, not financial advice.
+    </footer>
+  </div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
